@@ -65,6 +65,15 @@ Resources:
     Properties:
       RouteTableId: !Ref RouteTable
       SubnetId: !Ref Subnet10
+  # Incident Response Playbook: (AWS Bastion Isolation)
+  # 1. Detect anomalous activity via monitoring
+  # 2. Alert CSIRT team
+  # 3. Preserve all logs and system state
+  # 4. Switch security group/s to isolation mode
+  # 5. Snapshot the volumes for forensic analysis
+  # 6. Begin full investigation
+  # 7. Prepare After Action Report
+  # 8. Collect and prepare Lessons Learned
   BastionInstance:
     Type: AWS::EC2::Instance
     Properties:
@@ -84,6 +93,13 @@ Resources:
         FromPort: 22
         ToPort: 22
         CidrIp: 0.0.0.0/0
+  IsolationSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Isolates bastion during incident response
+      VpcId: !Ref VPC
+      SecurityGroupIngress: []
+      SecurityGroupEgress: []
 
 Outputs:
   InstanceId:
