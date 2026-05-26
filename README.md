@@ -19,27 +19,12 @@ The Roadblock: The lab guide instructs us to set AWS_ACCESS_KEY_ID and AWS_SECRE
 
 Steps Taken:
 Created my GitHub repository and uploaded the assignment files.
-Reviewed the README and lab instructions.
+I went through and had to research on how to update/modify the bastion.yaml.
+Found out how to get the AWS started and where to find the credential.
+Created a stack using the template bastion.yaml file and saw the stack already in the assignment
+Completed all the steps in the assignment on canvas. 
+Reviewed the RFI log to see if I missed anything and saw multiple issues I never saw in the assignment.
+Reviewed the README.md file and found more actual lab instructions.
+Restarted the AWS lab and now understood why there was a ppk
+Updated all of the keys in github to connect right. 
 Fished setting up SSH authentication on GitHub
-Attempted to access the AWS Lab Environment through Canvas.
-Received an error indicating the course has ended and is no longer available.
-Searched through the course materials but could not find an alternative location for the AWS credentials.
-
-
-Quick setup — if you’ve done this kind of thing before
-or	
-git@github.com:davidh-cybersec/AutomatingPlaybooks.git
-Get started by creating a new file or uploading an existing file. We recommend every repository include a README, LICENSE, and .gitignore.
-
-…or create a new repository on the command line
-echo "# AutomatingPlaybooks" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin git@github.com:davidh-cybersec/AutomatingPlaybooks.git
-git push -u origin main
-…or push an existing repository from the command line
-git remote add origin git@github.com:davidh-cybersec/AutomatingPlaybooks.git
-git branch -M main
-git push -u origin main
